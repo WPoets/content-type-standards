@@ -1,6 +1,6 @@
 # Content Type Standards
 
-The purpose of this repository is to create an open set of standards for the WordPress developer community on how to name custom post types as well as related taxonomies and metadata.  
+The purpose of this repository is to create an open set of standards for the WordPress developer community on how to name custom post types as well as related taxonomies and metadata.
 
 The need for a standard on common post types has been clear for years.  However, we've never taken the initiative and put together a list.  We need some sort of standard, even if it's loose and flexible, so that multiple plugins can compete in the same space without users losing access to their data when switching between plugins.
 
@@ -17,7 +17,7 @@ If plugin authors have some standards to go by, it'd make life so much easier fo
 
 ## What this project is for
 
-First and foremost, the project is for establishing some standards for plugin authors to follow.  
+First and foremost, the project is for establishing some standards for plugin authors to follow.
 
 A secondary goal might be for us to put together a few PHP scripts to copy/paste for quick registration of a post type or taxonomy.  That way, there's even less confusion about how to register a post type or taxonomy following these standards.
 
@@ -61,5 +61,7 @@ Once we've established which post types we want to address, then we can address 
 
 Here's a list of references that go into more detail about the issues this project is attempting to address:
 
+* [Custom Post Type Codex](http://codex.wordpress.org/Post_Types#Custom_Post_Types)
 * [Custom Post Type Standards](http://justintadlock.com/archives/2014/07/25/custom-post-type-standards)
 * [WordPress.com and Jetpack should lead the way toward standardizing custom post types](http://www.poststat.us/wordpress-com-jetpack-lead-way-toward-standardizing-custom-post-types)
+* [Smashing Magazine - The Complete Guide To Custom Post Types](http://www.smashingmagazine.com/2012/11/08/complete-guide-custom-post-types/)
