@@ -1,0 +1,62 @@
+#recipe-meta-box {
+  /*Ingredients Field Styles*/
+  /*Instructions Field Styles*/
+}
+#recipe-meta-box .recipe-field {
+  padding: 1em 0;
+  /*text fields*/
+}
+#recipe-meta-box .recipe-field label {
+  display: inline-block;
+  font-weight: bold;
+  text-align: left;
+  width: 8%;
+}
+#recipe-meta-box .recipe-field input[type="text"],
+#recipe-meta-box .recipe-field input[type="number"] {
+  width: 91%;
+  margin: 1px .4%;
+}
+#recipe-meta-box .recipe-field .description {
+  margin-left: 8.5%;
+}
+#recipe-meta-box .ingredients-field .description {
+  margin-left: 0;
+}
+#recipe-meta-box .ingredients-field .ingredient-field {
+  margin: 1em 0;
+}
+#recipe-meta-box .ingredients-field .ingredient-field label {
+  width: 5%;
+  text-align: right;
+  cursor: default;
+}
+#recipe-meta-box .ingredients-field .ingredient-field input {
+  width: 41%;
+}
+#recipe-meta-box .ingredients-field .ingredient-field .sort-icon,
+#recipe-meta-box .ingredients-field .ingredient-field .dismiss-icon {
+  display: inline-block;
+  width: 3%;
+  vertical-align: middle;
+}
+#recipe-meta-box .ingredients-field .ingredient-field .sort-icon {
+  color: #aaa;
+  cursor: move;
+}
+#recipe-meta-box .ingredients-field .ingredient-field .dismiss-icon {
+  cursor: pointer;
+}
+#recipe-meta-box .ingredients-field .ingredient-field .dismiss-icon:hover, #recipe-meta-box .ingredients-field .ingredient-field .dismiss-icon:focus {
+  color: #d9534f;
+}
+#recipe-meta-box .instructions-field #wp-recipe-instructions-wrap {
+  float: right;
+  width: 91%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
