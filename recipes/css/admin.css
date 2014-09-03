@@ -10,6 +10,7 @@
   display: inline-block;
   font-weight: bold;
   text-align: left;
+  vertical-align: baseline;
   width: 8%;
 }
 #recipe-meta-box .recipe-field input[type="text"],

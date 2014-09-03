@@ -1,0 +1,96 @@
+#recipe-meta-box{
+
+	.recipe-field{
+		padding:1em 0;
+
+		label{
+			display:inline-block;
+			font-weight:bold;
+			text-align:left;
+			vertical-align:baseline;
+			width:8%;
+		}
+
+		input{}
+
+		/*text fields*/
+		input[type="text"],
+		input[type="number"]{
+			width:91%;
+			margin:1px .4%;
+		}
+
+		.description{
+			margin-left:8.5%;
+		}
+	}
+
+	.yeld-field{}
+	.prep_time-field{}
+	.cook_time-field{}
+	.total_time-field{}
+
+	/*Ingredients Field Styles*/
+	.ingredients-field{
+
+		.description{
+			margin-left:0;
+		}
+
+		.ingredient-field{
+			margin:1em 0;
+
+			label{
+				width:5%;
+				text-align:right;
+				cursor:default;
+			}
+			input{
+				width:41%;
+			}
+			.sort-icon,
+			.dismiss-icon{
+				display:inline-block;
+				width:3%;
+				vertical-align:middle;
+			}
+			.sort-icon{
+				color:#aaa;
+				cursor:move;
+			}
+			.dismiss-icon{
+				cursor:pointer;
+
+				&:hover,&:focus{
+					color:#d9534f;
+				}
+			}
+		}
+	}
+
+	/*Instructions Field Styles*/
+	.instructions-field{
+
+		#wp-recipe-instructions-wrap{
+			float:right;
+			width:91%;
+		}
+	}
+
+	.serving_size-field{}
+	.calories-field{}
+	.fat-field{}
+	.saturated_fat-field{}
+	.unsaturated_fat-field{}
+	.carbohydrates-field{}
+	.sugar-field{}
+	.fiber-field{}
+	.protien-field{}
+	.cholesterol-field{}
+}
+
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
