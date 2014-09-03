@@ -1,0 +1,119 @@
+/* Utilities */
+.clearfix {
+    zoom: 1;
+}
+
+    .clearfix:after, .clearfix:before {
+        content: "";
+        display: table;
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+/* Single Recipe Styles */
+.recipe-header {}    
+
+    .recipe-meta {
+        border-left: 1px solid #DDD;
+    }
+
+    .recipe-meta .yield, .recipe-meta .prep-time, .recipe-meta .cook-time, .recipe-meta .total-time {
+        display: block;
+        width: 50%;
+        float: left;
+        border-top: 1px solid #DDD;
+        border-bottom: 1px solid #DDD;
+        border-right: 1px solid #DDD;
+        margin-bottom: -1px;
+    }
+
+        .recipe-meta .meta-title {
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.125em;
+            padding: 3px 0;
+            color: #999;
+        }
+
+        .recipe-meta .meta-value {
+            background: #EEE;
+            font-size: 200%;
+            font-weight: bold;
+            padding: 0.3em 0;
+            text-align: center;
+            display: block;
+            border-top: 1px solid #DDD;
+        }
+
+.recipe-content {}
+
+    .recipe-description {
+        font-size: 120%;
+    }
+
+    .recipe-ingredients .amount {
+        font-weight: bold;
+    }
+
+        .recipe-ingredients ul.ingredients {
+            margin: 0 0 1em;
+            padding: 0;
+            list-style: none;
+        }
+
+            .recipe-ingredients ul.ingredients li.ingredient {
+                margin: 0 0 0.5em 0;
+                display: block;
+            }
+
+    .nutrition-info {}
+
+        .nutrition-item {
+            line-height: 2;
+            border-bottom: 1px solid #DDD;
+        }
+
+            span.nutrition-title {
+                padding-left: 20px;
+            }
+
+            .nutrition-title {
+                float: left;
+                width: 80%;
+            }
+
+            .nutrition-content {
+                float: right;
+                width: 20%;
+                text-align: right;
+            }
+
+@media only screen and (min-width: 768px) {
+    
+    .recipe-image {
+        float: right;
+        margin-left: 2em;
+        width: 30%;
+    }
+    
+}
+
+@media only screen and (min-width: 1140px) {
+    
+    .recipe-meta {
+        border-top: 0;
+    }
+    
+    .recipe-meta .yield, .recipe-meta .prep-time, .recipe-meta .cook-time, .recipe-meta .total-time {
+        width: 25%;
+        border-top: 1px solid #DDD;
+    }
+    
+    .recipe-description {
+        font-size: 150%;
+    }
+    
+}

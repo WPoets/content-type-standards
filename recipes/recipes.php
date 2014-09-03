@@ -58,6 +58,8 @@ class Recipes {
 		add_action( 'init', array( $this, 'add_taxonomies' ) );
 
 		add_filter( 'template_include',  array( $this, 'include_template_function' ), 1 );
+        
+        add_action( 'wp_enqueue_scripts', array($this, 'recipes_frontend_style'));
 
 
 		if ( is_admin() ) {
@@ -90,7 +92,7 @@ class Recipes {
 			'add_new_item'       => __( 'Add New Recipe' ),
 			'edit_item'          => __( 'Edit Recipe' ),
 			'new_item'           => __( 'New Recipe' ),
-			'all_items'          => __( 'All Recipe' ),
+			'all_items'          => __( 'All Recipes' ),
 			'view_item'          => __( 'View Recipe' ),
 			'search_items'       => __( 'Search Recipes' ),
 			'not_found'          => __( 'No recipe found' ),
@@ -546,6 +548,11 @@ class Recipes {
 	    }
 	    return $template_path;
 	}
+    
+    /* Register and enqueue front-end stylesheet */
+    function recipes_frontend_style() {
+        wp_enqueue_style(self::slug.'-style', plugins_url('/css/style.css', __FILE__));   
+    }
 
 }
 add_action('plugins_loaded', array( 'Recipes', 'get_instance' ) );
